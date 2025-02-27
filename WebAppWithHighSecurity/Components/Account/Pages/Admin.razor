@@ -1,0 +1,17 @@
+﻿@page "/admin"
+
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize(Roles = "Admin")]
+
+<PageTitle>Admin Page</PageTitle>
+
+<AuthorizeView Roles="Admin">
+    <Authorized>
+        <h1>Admin Page</h1>
+        <p>Welcome, @context.User.Identity?.Name!</p>
+    </Authorized>
+    <NotAuthorized>
+        <h1>Access Denied</h1>
+        <p>You do not have the necessary permissions to view this page.</p>
+    </NotAuthorized>
+</AuthorizeView>

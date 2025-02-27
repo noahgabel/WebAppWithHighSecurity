@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppWithHighSecurity", "WebAppWithHighSecurity\WebAppWithHighSecurity.csproj", "{00E06B95-6092-45D2-BCA2-2CA8F1933C4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppWithHighSecurity.Tests", "WebAppWithHighSecurity.Tests\WebAppWithHighSecurity.Tests.csproj", "{2B875720-1483-4452-932C-79BEAAE7F317}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00E06B95-6092-45D2-BCA2-2CA8F1933C4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00E06B95-6092-45D2-BCA2-2CA8F1933C4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00E06B95-6092-45D2-BCA2-2CA8F1933C4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00E06B95-6092-45D2-BCA2-2CA8F1933C4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B875720-1483-4452-932C-79BEAAE7F317}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B875720-1483-4452-932C-79BEAAE7F317}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B875720-1483-4452-932C-79BEAAE7F317}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B875720-1483-4452-932C-79BEAAE7F317}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

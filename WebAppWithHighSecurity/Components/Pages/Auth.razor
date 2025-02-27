@@ -1,0 +1,13 @@
+﻿@page "/auth"
+
+<PageTitle>Auth</PageTitle>
+
+<AuthorizeView>
+    <Authorized>
+        <h1>You are authenticated</h1>
+        <p>Hello @context.User.Identity?.Name!</p>
+    </Authorized>
+    <NotAuthorized>
+        <h1>You are not authenticated</h1>
+    </NotAuthorized>
+</AuthorizeView>
