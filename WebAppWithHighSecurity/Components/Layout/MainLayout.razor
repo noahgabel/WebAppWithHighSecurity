@@ -1,9 +1,7 @@
-﻿@using Microsoft.AspNetCore.Identity
-@using WebAppWithHighSecurity.Data
+﻿@using System.Security.Claims
+@using WebAppWithHighSecurity.Components.Account.Shared
 @inherits LayoutComponentBase
 
-@inject UserManager<ApplicationUser> UserManager
-@inject AuthenticationStateProvider AuthenticationStateProvider
 
 <div class="page">
     <div class="sidebar">
@@ -14,7 +12,7 @@
         <div class="top-row px-4">
             <AuthorizeView>
                 <Authorized>
-                    <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">@_userName (@_roleName)</a>
+                    <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">@context.User.Identity?.Name (@context.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value)</a>
                 </Authorized>
             </AuthorizeView>
         </div>
@@ -32,23 +30,4 @@
 </div>
 
 @code {
-    private string? _userName;
-    private string? _roleName;
-
-    protected override async Task OnInitializedAsync()
-    {
-        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
-        var user = authState.User;
-
-        if (user.Identity?.IsAuthenticated == true)
-        {
-            var appUser = await UserManager.GetUserAsync(user);
-            if (appUser != null)
-            {
-                _userName = user.Identity.Name;
-                var roles = await UserManager.GetRolesAsync(appUser);
-                _roleName = roles.FirstOrDefault();
-            }
-        }
-    }
 }

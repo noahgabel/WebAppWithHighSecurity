@@ -1,4 +1,5 @@
 ﻿@page "/auth"
+@using WebAppWithHighSecurity.Components.Account.Shared
 
 <PageTitle>Auth</PageTitle>
 
@@ -8,6 +9,6 @@
         <p>Hello @context.User.Identity?.Name!</p>
     </Authorized>
     <NotAuthorized>
-        <h1>You are not authenticated</h1>
+        <RedirectToLogin />
     </NotAuthorized>
 </AuthorizeView>

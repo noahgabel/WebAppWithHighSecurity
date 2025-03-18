@@ -186,12 +186,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VudGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/noahg/RiderProjects/WebAppWithHighSecurity/WebAppWithHighSecurity/Components/Pages/CprNr.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDcHJOci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/noahg/RiderProjects/WebAppWithHighSecurity/WebAppWithHighSecurity/Components/Pages/Error.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/noahg/RiderProjects/WebAppWithHighSecurity/WebAppWithHighSecurity/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/noahg/RiderProjects/WebAppWithHighSecurity/WebAppWithHighSecurity/Components/Pages/TodoList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xUb2RvTGlzdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/noahg/RiderProjects/WebAppWithHighSecurity/WebAppWithHighSecurity/Components/Pages/Weather.razor]

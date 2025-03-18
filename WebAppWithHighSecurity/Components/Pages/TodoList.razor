@@ -1,0 +1,80 @@
+﻿@page "/TodoList"
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Identity
+@using Microsoft.EntityFrameworkCore
+@using WebAppWithHighSecurity.Data
+@inject UserManager<ApplicationUser> UserManager
+@inject IServiceScopeFactory ServiceScopeFactory
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@rendermode InteractiveServer
+@attribute [Authorize]
+
+<h3>Todo List</h3>
+
+<p>Welcome, @_userName (@_roleName)</p>
+
+<ul>
+    @foreach (var item in _todoItems)
+    {
+        <li>@item.Description</li>
+    }
+</ul>
+
+<input @bind="newTodoDescription" placeholder="New todo item..."/>
+<button @onclick="AddTodo">Add</button>
+
+@code {
+    private string? _userName;
+    private string? _roleName;
+    private List<TodoItem> _todoItems = new();
+    private string newTodoDescription = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+
+        if (user.Identity?.IsAuthenticated == true)
+        {
+            var appUser = await UserManager.GetUserAsync(user);
+            if (appUser != null)
+            {
+                _userName = user.Identity.Name;
+                var roles = await UserManager.GetRolesAsync(appUser);
+                _roleName = string.Join(", ", roles);
+
+                using var scope = ServiceScopeFactory.CreateScope();
+                var dbContext = scope.ServiceProvider.GetRequiredService<CprTodoDbContext>();
+                _todoItems = await dbContext.TodoItems.Where(t => t.UserId == appUser.Id).ToListAsync();
+            }
+        }
+    }
+
+    private async Task AddTodo()
+    {
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+
+        if (user.Identity?.IsAuthenticated == true)
+        {
+            var appUser = await UserManager.GetUserAsync(user);
+            if (appUser != null)
+            {
+                using var scope = ServiceScopeFactory.CreateScope();
+                var dbContext = scope.ServiceProvider.GetRequiredService<CprTodoDbContext>();
+
+                var todoItem = new TodoItem
+                {
+                    UserId = appUser.Id,
+                    Description = newTodoDescription
+                };
+
+                dbContext.TodoItems.Add(todoItem);
+                await dbContext.SaveChangesAsync();
+
+                _todoItems.Add(todoItem);
+                newTodoDescription = string.Empty;
+            }
+        }
+    }
+}

@@ -1,0 +1,76 @@
+﻿@page "/CprNr"
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Identity
+@using WebAppWithHighSecurity.Data
+@inject CprTodoDbContext DbContext
+@inject UserManager<ApplicationUser> UserManager
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject NavigationManager Navigation
+@rendermode InteractiveServer
+@attribute [Authorize]
+
+<h3>Enter CPR Number</h3>
+
+<p>@_userName (@_roleName)</p>
+
+<input @bind="CprNumber" type="text" placeholder="Enter CPR number..."/>
+<button @onclick="Submit">Submit</button>
+
+@code {
+    private string CprNumber { get; set; } = string.Empty;
+    private string? _userName;
+    private string? _roleName;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+
+        if (user.Identity?.IsAuthenticated == true)
+        {
+            var appUser = await UserManager.GetUserAsync(user);
+            if (appUser != null)
+            {
+                _userName = user.Identity.Name;
+                var roles = await UserManager.GetRolesAsync(appUser);
+                _roleName = string.Join(", ", roles);
+            }
+        }
+    }
+
+    private async Task Submit()
+    {
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+
+        if (user.Identity?.IsAuthenticated == true)
+        {
+            var appUser = await UserManager.GetUserAsync(user);
+            if (appUser != null)
+            {
+                var existingCpr = await DbContext.UserCprNumbers.FindAsync(appUser.Id);
+                if (existingCpr == null)
+                {
+                    var userCprNumber = new UserCprNumber
+                    {
+                        UserId = appUser.Id,
+                        CprNr = CprNumber
+                    };
+
+                    DbContext.UserCprNumbers.Add(userCprNumber);
+                    await DbContext.SaveChangesAsync();
+                    Navigation.NavigateTo("/TodoList");
+                }
+                else if (existingCpr.CprNr == CprNumber)
+                {
+                    Navigation.NavigateTo("/TodoList");
+                }
+                else
+                {
+                    Console.WriteLine("CPR number validation failed.");
+                }
+            }
+        }
+    }
+
+}

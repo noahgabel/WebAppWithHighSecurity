@@ -28,8 +28,13 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
                        throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
-builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
+var cprTodoConnectionString = builder.Configuration.GetConnectionString("TodoConnection") ??
+                              throw new InvalidOperationException("Connection string 'TodoConnection' not found.");
+builder.Services.AddDbContext<CprTodoDbContext>(options =>
+    options.UseSqlServer(cprTodoConnectionString));
+
+builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddIdentityCore<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>()
     .AddRoles<IdentityRole>()
@@ -42,6 +47,14 @@ builder.Services.AddScoped<IRoleStore<IdentityRole>, RoleStore<IdentityRole, App
 
 builder.Services.AddSingleton<IEmailSender<ApplicationUser>, IdentityNoOpEmailSender>();
 
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.Events.OnRedirectToLogin = context =>
+    {
+        context.Response.Redirect("/CprNr");
+        return Task.CompletedTask;
+    };
+});
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
