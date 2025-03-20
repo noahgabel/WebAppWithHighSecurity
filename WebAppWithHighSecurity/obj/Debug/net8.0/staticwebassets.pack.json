@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebAppWithHighSecurity.bundle.scp.css",
-      "PackagePath": "staticwebassets\\WebAppWithHighSecurity.bundle.scp.css"
+      "PackagePath": "staticwebassets\\WebAppWithHighSecurity.x9gjajpcll.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\app.css",
@@ -63,6 +63,10 @@
     {
       "Id": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\qr.js",
       "PackagePath": "staticwebassets\\qr.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.WebAppWithHighSecurity.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.WebAppWithHighSecurity.Microsoft.AspNetCore.StaticWebAssets.props",

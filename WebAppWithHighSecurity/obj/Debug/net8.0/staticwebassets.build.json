@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lo1gnrWksxLFeK9zlz+Czj+0IA5kngpiD6npMNfeUVQ=",
+  "Hash": "7aMHhz5tjpIkiB/suWYEV0NCFJMFE9fcDWT+cGnRcPE=",
   "Source": "WebAppWithHighSecurity",
   "BasePath": "_content/WebAppWithHighSecurity",
   "Mode": "Default",
@@ -31,6 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "epbw58hwuq",
+      "Integrity": "Qlj6NGS978hjVyrYLtW5G6trKGerdW4Fwgvr2eUo/lU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\noahg\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\8.0.11\\staticwebassets\\AuthenticationService.js"
@@ -41,7 +43,7 @@
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/WebAppWithHighSecurity",
-      "RelativePath": "WebAppWithHighSecurity.styles.css",
+      "RelativePath": "WebAppWithHighSecurity#[.{fingerprint}]?.styles.css",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Primary",
@@ -50,6 +52,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
+      "Fingerprint": "x9gjajpcll",
+      "Integrity": "2yD7tIAlW2iWHa0M3Zl6oKHfG7gHdzgpNft2RLojXoY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\obj\\Debug\\net8.0\\scopedcss\\bundle\\WebAppWithHighSecurity.styles.css"
@@ -60,7 +64,7 @@
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/WebAppWithHighSecurity",
-      "RelativePath": "WebAppWithHighSecurity.bundle.scp.css",
+      "RelativePath": "WebAppWithHighSecurity#[.{fingerprint}]!.bundle.scp.css",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Primary",
@@ -69,6 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
+      "Fingerprint": "x9gjajpcll",
+      "Integrity": "2yD7tIAlW2iWHa0M3Zl6oKHfG7gHdzgpNft2RLojXoY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebAppWithHighSecurity.bundle.scp.css"
@@ -79,15 +85,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\",
       "BasePath": "_content/WebAppWithHighSecurity",
-      "RelativePath": "app.css",
+      "RelativePath": "app#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "da95v2qkru",
+      "Integrity": "u9qEka1auR7E3rd3/8/j8hkQdSOYj9bRJ4nYiFDR1sE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\app.css"
@@ -98,15 +106,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\",
       "BasePath": "_content/WebAppWithHighSecurity",
-      "RelativePath": "bootstrap/bootstrap.min.css",
+      "RelativePath": "bootstrap/bootstrap.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "6gzpyzhau4",
+      "Integrity": "SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
@@ -117,15 +127,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\",
       "BasePath": "_content/WebAppWithHighSecurity",
-      "RelativePath": "bootstrap/bootstrap.min.css.map",
+      "RelativePath": "bootstrap/bootstrap.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "8inm30yfxf",
+      "Integrity": "gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
@@ -136,15 +148,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\",
       "BasePath": "_content/WebAppWithHighSecurity",
-      "RelativePath": "favicon.png",
+      "RelativePath": "favicon#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "ifv42okdf2",
+      "Integrity": "4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.png"
@@ -155,15 +169,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\",
       "BasePath": "_content/WebAppWithHighSecurity",
-      "RelativePath": "lib/davidshimjs-qrcodejs-04f46c6/.gitignore",
+      "RelativePath": "lib/davidshimjs-qrcodejs-04f46c6/#[.{fingerprint}]?.gitignore",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "7reg4ggakz",
+      "Integrity": "TQ1087y12xzn6Xp3YMgQf2tpkPznsD7a1/mGVKn/iVU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\davidshimjs-qrcodejs-04f46c6\\.gitignore"
@@ -174,15 +190,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\",
       "BasePath": "_content/WebAppWithHighSecurity",
-      "RelativePath": "lib/davidshimjs-qrcodejs-04f46c6/bower.json",
+      "RelativePath": "lib/davidshimjs-qrcodejs-04f46c6/bower#[.{fingerprint}]?.json",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "alif1c7jvy",
+      "Integrity": "InOMrHKNtlSGRlofU49R1wXidtqZsXQq3+omNZzwtEo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\davidshimjs-qrcodejs-04f46c6\\bower.json"
@@ -193,15 +211,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\",
       "BasePath": "_content/WebAppWithHighSecurity",
-      "RelativePath": "lib/davidshimjs-qrcodejs-04f46c6/index-svg.html",
+      "RelativePath": "lib/davidshimjs-qrcodejs-04f46c6/index-svg#[.{fingerprint}]?.html",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "rz0flhdgl0",
+      "Integrity": "OWQJz8G43vmLS+PI/nFP7ozjvia5pnbaUHxqYQ/u5Gk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\davidshimjs-qrcodejs-04f46c6\\index-svg.html"
@@ -212,15 +232,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\",
       "BasePath": "_content/WebAppWithHighSecurity",
-      "RelativePath": "lib/davidshimjs-qrcodejs-04f46c6/index.html",
+      "RelativePath": "lib/davidshimjs-qrcodejs-04f46c6/index#[.{fingerprint}]?.html",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "q7by55ul0f",
+      "Integrity": "RubIvoIk1gB7+g+T6r0o/Cu4/jni2Um+d992kZQFI9w=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\davidshimjs-qrcodejs-04f46c6\\index.html"
@@ -231,15 +253,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\",
       "BasePath": "_content/WebAppWithHighSecurity",
-      "RelativePath": "lib/davidshimjs-qrcodejs-04f46c6/index.svg",
+      "RelativePath": "lib/davidshimjs-qrcodejs-04f46c6/index#[.{fingerprint}]?.svg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "o0gxop2uah",
+      "Integrity": "qHS/NRuWuR+snpIIWC7AweVrzw77ZOQOEBVtkN0Id7c=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\davidshimjs-qrcodejs-04f46c6\\index.svg"
@@ -250,15 +274,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\",
       "BasePath": "_content/WebAppWithHighSecurity",
-      "RelativePath": "lib/davidshimjs-qrcodejs-04f46c6/jquery.min.js",
+      "RelativePath": "lib/davidshimjs-qrcodejs-04f46c6/jquery.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "9cm4jftk4z",
+      "Integrity": "51ZECcH6UKCd3jqSJMlRWt5yrzezyzc2wIvDYd0GmWE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\davidshimjs-qrcodejs-04f46c6\\jquery.min.js"
@@ -269,15 +295,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\",
       "BasePath": "_content/WebAppWithHighSecurity",
-      "RelativePath": "lib/davidshimjs-qrcodejs-04f46c6/LICENSE",
+      "RelativePath": "lib/davidshimjs-qrcodejs-04f46c6/LICENSE#[.{fingerprint}]?",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "hvhegso7u5",
+      "Integrity": "A26yujDMsUDZmprKtuB3p2u8SS3cIcBBqFED6mdp/IM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\davidshimjs-qrcodejs-04f46c6\\LICENSE"
@@ -288,15 +316,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\",
       "BasePath": "_content/WebAppWithHighSecurity",
-      "RelativePath": "lib/davidshimjs-qrcodejs-04f46c6/qrcode.js",
+      "RelativePath": "lib/davidshimjs-qrcodejs-04f46c6/qrcode#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "9x5ly5g5yf",
+      "Integrity": "wxgOEutoVESrQREChQ/xGo2/MOVzNI4K2Kgs77SRMvE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\davidshimjs-qrcodejs-04f46c6\\qrcode.js"
@@ -307,15 +337,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\",
       "BasePath": "_content/WebAppWithHighSecurity",
-      "RelativePath": "lib/davidshimjs-qrcodejs-04f46c6/qrcode.min.js",
+      "RelativePath": "lib/davidshimjs-qrcodejs-04f46c6/qrcode.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "h5gslb8p3n",
+      "Integrity": "xUHvBjJ4hahBW8qN9gceFBibSFUzbe9PNttUvehITzY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\davidshimjs-qrcodejs-04f46c6\\qrcode.min.js"
@@ -326,15 +358,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\",
       "BasePath": "_content/WebAppWithHighSecurity",
-      "RelativePath": "lib/davidshimjs-qrcodejs-04f46c6/README.md",
+      "RelativePath": "lib/davidshimjs-qrcodejs-04f46c6/README#[.{fingerprint}]?.md",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "fmjsywd4em",
+      "Integrity": "qfucXj7UghSS0K4MpRQGxEChH1GIJs82mKqFu5EqBsI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\davidshimjs-qrcodejs-04f46c6\\README.md"
@@ -345,18 +379,1453 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\",
       "BasePath": "_content/WebAppWithHighSecurity",
-      "RelativePath": "qr.js",
+      "RelativePath": "qr#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "at67e3d06i",
+      "Integrity": "wlcSTXxSRL7/tf5L1AgMPzoF4pkPbtsvvs0GYKMVY8s=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\qr.js"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "_content/Microsoft.AspNetCore.Components.WebAssembly.Authentication/AuthenticationService.js",
+      "AssetFile": "C:\\Users\\noahg\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\8.0.11\\staticwebassets\\AuthenticationService.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "291499"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Qlj6NGS978hjVyrYLtW5G6trKGerdW4Fwgvr2eUo/lU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Oct 2024 23:58:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Qlj6NGS978hjVyrYLtW5G6trKGerdW4Fwgvr2eUo/lU="
+        }
+      ]
+    },
+    {
+      "Route": "app.css",
+      "AssetFile": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2591"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u9qEka1auR7E3rd3/8/j8hkQdSOYj9bRJ4nYiFDR1sE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 18:50:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-u9qEka1auR7E3rd3/8/j8hkQdSOYj9bRJ4nYiFDR1sE="
+        }
+      ]
+    },
+    {
+      "Route": "app.da95v2qkru.css",
+      "AssetFile": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2591"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u9qEka1auR7E3rd3/8/j8hkQdSOYj9bRJ4nYiFDR1sE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 18:50:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "da95v2qkru"
+        },
+        {
+          "Name": "label",
+          "Value": "app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-u9qEka1auR7E3rd3/8/j8hkQdSOYj9bRJ4nYiFDR1sE="
+        }
+      ]
+    },
+    {
+      "Route": "bootstrap/bootstrap.min.6gzpyzhau4.css",
+      "AssetFile": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "162726"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 18:50:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6gzpyzhau4"
+        },
+        {
+          "Name": "label",
+          "Value": "bootstrap/bootstrap.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0="
+        }
+      ]
+    },
+    {
+      "Route": "bootstrap/bootstrap.min.css",
+      "AssetFile": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "162726"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 18:50:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0="
+        }
+      ]
+    },
+    {
+      "Route": "bootstrap/bootstrap.min.css.8inm30yfxf.map",
+      "AssetFile": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "449111"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 18:50:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8inm30yfxf"
+        },
+        {
+          "Name": "label",
+          "Value": "bootstrap/bootstrap.min.css.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        }
+      ]
+    },
+    {
+      "Route": "bootstrap/bootstrap.min.css.map",
+      "AssetFile": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "449111"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 18:50:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.ifv42okdf2.png",
+      "AssetFile": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\favicon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1148"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 18:50:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ifv42okdf2"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.png",
+      "AssetFile": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\favicon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1148"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 18:50:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="
+        }
+      ]
+    },
+    {
+      "Route": "lib/davidshimjs-qrcodejs-04f46c6/.7reg4ggakz.gitignore",
+      "AssetFile": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\lib\\davidshimjs-qrcodejs-04f46c6\\.gitignore",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TQ1087y12xzn6Xp3YMgQf2tpkPznsD7a1/mGVKn/iVU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 18:50:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7reg4ggakz"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/davidshimjs-qrcodejs-04f46c6/.gitignore"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TQ1087y12xzn6Xp3YMgQf2tpkPznsD7a1/mGVKn/iVU="
+        }
+      ]
+    },
+    {
+      "Route": "lib/davidshimjs-qrcodejs-04f46c6/.gitignore",
+      "AssetFile": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\lib\\davidshimjs-qrcodejs-04f46c6\\.gitignore",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TQ1087y12xzn6Xp3YMgQf2tpkPznsD7a1/mGVKn/iVU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 18:50:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TQ1087y12xzn6Xp3YMgQf2tpkPznsD7a1/mGVKn/iVU="
+        }
+      ]
+    },
+    {
+      "Route": "lib/davidshimjs-qrcodejs-04f46c6/bower.alif1c7jvy.json",
+      "AssetFile": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\lib\\davidshimjs-qrcodejs-04f46c6\\bower.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "448"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"InOMrHKNtlSGRlofU49R1wXidtqZsXQq3+omNZzwtEo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 18:50:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "alif1c7jvy"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/davidshimjs-qrcodejs-04f46c6/bower.json"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-InOMrHKNtlSGRlofU49R1wXidtqZsXQq3+omNZzwtEo="
+        }
+      ]
+    },
+    {
+      "Route": "lib/davidshimjs-qrcodejs-04f46c6/bower.json",
+      "AssetFile": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\lib\\davidshimjs-qrcodejs-04f46c6\\bower.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "448"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"InOMrHKNtlSGRlofU49R1wXidtqZsXQq3+omNZzwtEo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 18:50:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-InOMrHKNtlSGRlofU49R1wXidtqZsXQq3+omNZzwtEo="
+        }
+      ]
+    },
+    {
+      "Route": "lib/davidshimjs-qrcodejs-04f46c6/index-svg.html",
+      "AssetFile": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\lib\\davidshimjs-qrcodejs-04f46c6\\index-svg.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1468"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OWQJz8G43vmLS+PI/nFP7ozjvia5pnbaUHxqYQ/u5Gk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 18:50:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OWQJz8G43vmLS+PI/nFP7ozjvia5pnbaUHxqYQ/u5Gk="
+        }
+      ]
+    },
+    {
+      "Route": "lib/davidshimjs-qrcodejs-04f46c6/index-svg.rz0flhdgl0.html",
+      "AssetFile": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\lib\\davidshimjs-qrcodejs-04f46c6\\index-svg.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1468"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OWQJz8G43vmLS+PI/nFP7ozjvia5pnbaUHxqYQ/u5Gk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 18:50:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rz0flhdgl0"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/davidshimjs-qrcodejs-04f46c6/index-svg.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OWQJz8G43vmLS+PI/nFP7ozjvia5pnbaUHxqYQ/u5Gk="
+        }
+      ]
+    },
+    {
+      "Route": "lib/davidshimjs-qrcodejs-04f46c6/index.html",
+      "AssetFile": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\lib\\davidshimjs-qrcodejs-04f46c6\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1247"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RubIvoIk1gB7+g+T6r0o/Cu4/jni2Um+d992kZQFI9w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 18:50:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RubIvoIk1gB7+g+T6r0o/Cu4/jni2Um+d992kZQFI9w="
+        }
+      ]
+    },
+    {
+      "Route": "lib/davidshimjs-qrcodejs-04f46c6/index.o0gxop2uah.svg",
+      "AssetFile": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\lib\\davidshimjs-qrcodejs-04f46c6\\index.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1143"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qHS/NRuWuR+snpIIWC7AweVrzw77ZOQOEBVtkN0Id7c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 18:50:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "o0gxop2uah"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/davidshimjs-qrcodejs-04f46c6/index.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qHS/NRuWuR+snpIIWC7AweVrzw77ZOQOEBVtkN0Id7c="
+        }
+      ]
+    },
+    {
+      "Route": "lib/davidshimjs-qrcodejs-04f46c6/index.q7by55ul0f.html",
+      "AssetFile": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\lib\\davidshimjs-qrcodejs-04f46c6\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1247"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RubIvoIk1gB7+g+T6r0o/Cu4/jni2Um+d992kZQFI9w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 18:50:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "q7by55ul0f"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/davidshimjs-qrcodejs-04f46c6/index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RubIvoIk1gB7+g+T6r0o/Cu4/jni2Um+d992kZQFI9w="
+        }
+      ]
+    },
+    {
+      "Route": "lib/davidshimjs-qrcodejs-04f46c6/index.svg",
+      "AssetFile": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\lib\\davidshimjs-qrcodejs-04f46c6\\index.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1143"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qHS/NRuWuR+snpIIWC7AweVrzw77ZOQOEBVtkN0Id7c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 18:50:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qHS/NRuWuR+snpIIWC7AweVrzw77ZOQOEBVtkN0Id7c="
+        }
+      ]
+    },
+    {
+      "Route": "lib/davidshimjs-qrcodejs-04f46c6/jquery.min.9cm4jftk4z.js",
+      "AssetFile": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\lib\\davidshimjs-qrcodejs-04f46c6\\jquery.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "93638"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"51ZECcH6UKCd3jqSJMlRWt5yrzezyzc2wIvDYd0GmWE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 18:50:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9cm4jftk4z"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/davidshimjs-qrcodejs-04f46c6/jquery.min.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-51ZECcH6UKCd3jqSJMlRWt5yrzezyzc2wIvDYd0GmWE="
+        }
+      ]
+    },
+    {
+      "Route": "lib/davidshimjs-qrcodejs-04f46c6/jquery.min.js",
+      "AssetFile": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\lib\\davidshimjs-qrcodejs-04f46c6\\jquery.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "93638"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"51ZECcH6UKCd3jqSJMlRWt5yrzezyzc2wIvDYd0GmWE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 18:50:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-51ZECcH6UKCd3jqSJMlRWt5yrzezyzc2wIvDYd0GmWE="
+        }
+      ]
+    },
+    {
+      "Route": "lib/davidshimjs-qrcodejs-04f46c6/LICENSE",
+      "AssetFile": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\lib\\davidshimjs-qrcodejs-04f46c6\\LICENSE",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1111"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"A26yujDMsUDZmprKtuB3p2u8SS3cIcBBqFED6mdp/IM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 18:50:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-A26yujDMsUDZmprKtuB3p2u8SS3cIcBBqFED6mdp/IM="
+        }
+      ]
+    },
+    {
+      "Route": "lib/davidshimjs-qrcodejs-04f46c6/LICENSE.hvhegso7u5",
+      "AssetFile": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\lib\\davidshimjs-qrcodejs-04f46c6\\LICENSE",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1111"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"A26yujDMsUDZmprKtuB3p2u8SS3cIcBBqFED6mdp/IM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 18:50:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hvhegso7u5"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/davidshimjs-qrcodejs-04f46c6/LICENSE"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-A26yujDMsUDZmprKtuB3p2u8SS3cIcBBqFED6mdp/IM="
+        }
+      ]
+    },
+    {
+      "Route": "lib/davidshimjs-qrcodejs-04f46c6/qrcode.9x5ly5g5yf.js",
+      "AssetFile": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\lib\\davidshimjs-qrcodejs-04f46c6\\qrcode.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33782"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wxgOEutoVESrQREChQ/xGo2/MOVzNI4K2Kgs77SRMvE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 18:50:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9x5ly5g5yf"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/davidshimjs-qrcodejs-04f46c6/qrcode.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-wxgOEutoVESrQREChQ/xGo2/MOVzNI4K2Kgs77SRMvE="
+        }
+      ]
+    },
+    {
+      "Route": "lib/davidshimjs-qrcodejs-04f46c6/qrcode.js",
+      "AssetFile": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\lib\\davidshimjs-qrcodejs-04f46c6\\qrcode.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33782"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wxgOEutoVESrQREChQ/xGo2/MOVzNI4K2Kgs77SRMvE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 18:50:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-wxgOEutoVESrQREChQ/xGo2/MOVzNI4K2Kgs77SRMvE="
+        }
+      ]
+    },
+    {
+      "Route": "lib/davidshimjs-qrcodejs-04f46c6/qrcode.min.h5gslb8p3n.js",
+      "AssetFile": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\lib\\davidshimjs-qrcodejs-04f46c6\\qrcode.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "19927"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xUHvBjJ4hahBW8qN9gceFBibSFUzbe9PNttUvehITzY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 18:50:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h5gslb8p3n"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/davidshimjs-qrcodejs-04f46c6/qrcode.min.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xUHvBjJ4hahBW8qN9gceFBibSFUzbe9PNttUvehITzY="
+        }
+      ]
+    },
+    {
+      "Route": "lib/davidshimjs-qrcodejs-04f46c6/qrcode.min.js",
+      "AssetFile": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\lib\\davidshimjs-qrcodejs-04f46c6\\qrcode.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "19927"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xUHvBjJ4hahBW8qN9gceFBibSFUzbe9PNttUvehITzY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 18:50:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xUHvBjJ4hahBW8qN9gceFBibSFUzbe9PNttUvehITzY="
+        }
+      ]
+    },
+    {
+      "Route": "lib/davidshimjs-qrcodejs-04f46c6/README.fmjsywd4em.md",
+      "AssetFile": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\lib\\davidshimjs-qrcodejs-04f46c6\\README.md",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1142"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/markdown"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qfucXj7UghSS0K4MpRQGxEChH1GIJs82mKqFu5EqBsI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 18:50:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fmjsywd4em"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/davidshimjs-qrcodejs-04f46c6/README.md"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qfucXj7UghSS0K4MpRQGxEChH1GIJs82mKqFu5EqBsI="
+        }
+      ]
+    },
+    {
+      "Route": "lib/davidshimjs-qrcodejs-04f46c6/README.md",
+      "AssetFile": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\lib\\davidshimjs-qrcodejs-04f46c6\\README.md",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1142"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/markdown"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qfucXj7UghSS0K4MpRQGxEChH1GIJs82mKqFu5EqBsI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 18:50:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qfucXj7UghSS0K4MpRQGxEChH1GIJs82mKqFu5EqBsI="
+        }
+      ]
+    },
+    {
+      "Route": "qr.at67e3d06i.js",
+      "AssetFile": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\qr.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "277"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wlcSTXxSRL7/tf5L1AgMPzoF4pkPbtsvvs0GYKMVY8s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 18:50:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "at67e3d06i"
+        },
+        {
+          "Name": "label",
+          "Value": "qr.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-wlcSTXxSRL7/tf5L1AgMPzoF4pkPbtsvvs0GYKMVY8s="
+        }
+      ]
+    },
+    {
+      "Route": "qr.js",
+      "AssetFile": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\wwwroot\\qr.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "277"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wlcSTXxSRL7/tf5L1AgMPzoF4pkPbtsvvs0GYKMVY8s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 18:50:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-wlcSTXxSRL7/tf5L1AgMPzoF4pkPbtsvvs0GYKMVY8s="
+        }
+      ]
+    },
+    {
+      "Route": "WebAppWithHighSecurity.bundle.scp.css",
+      "AssetFile": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebAppWithHighSecurity.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8215"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2yD7tIAlW2iWHa0M3Zl6oKHfG7gHdzgpNft2RLojXoY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 18:50:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2yD7tIAlW2iWHa0M3Zl6oKHfG7gHdzgpNft2RLojXoY="
+        }
+      ]
+    },
+    {
+      "Route": "WebAppWithHighSecurity.styles.css",
+      "AssetFile": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\obj\\Debug\\net8.0\\scopedcss\\bundle\\WebAppWithHighSecurity.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8215"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2yD7tIAlW2iWHa0M3Zl6oKHfG7gHdzgpNft2RLojXoY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 18:50:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2yD7tIAlW2iWHa0M3Zl6oKHfG7gHdzgpNft2RLojXoY="
+        }
+      ]
+    },
+    {
+      "Route": "WebAppWithHighSecurity.x9gjajpcll.bundle.scp.css",
+      "AssetFile": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebAppWithHighSecurity.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8215"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2yD7tIAlW2iWHa0M3Zl6oKHfG7gHdzgpNft2RLojXoY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 18:50:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "x9gjajpcll"
+        },
+        {
+          "Name": "label",
+          "Value": "WebAppWithHighSecurity.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2yD7tIAlW2iWHa0M3Zl6oKHfG7gHdzgpNft2RLojXoY="
+        }
+      ]
+    },
+    {
+      "Route": "WebAppWithHighSecurity.x9gjajpcll.styles.css",
+      "AssetFile": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\obj\\Debug\\net8.0\\scopedcss\\bundle\\WebAppWithHighSecurity.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8215"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2yD7tIAlW2iWHa0M3Zl6oKHfG7gHdzgpNft2RLojXoY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 18:50:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "x9gjajpcll"
+        },
+        {
+          "Name": "label",
+          "Value": "WebAppWithHighSecurity.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2yD7tIAlW2iWHa0M3Zl6oKHfG7gHdzgpNft2RLojXoY="
+        }
+      ]
     }
   ]
 }

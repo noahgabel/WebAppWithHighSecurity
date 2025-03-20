@@ -170,3 +170,7 @@ C:\Users\noahg\RiderProjects\WebAppWithHighSecurity\WebAppWithHighSecurity\bin\D
 C:\Users\noahg\RiderProjects\WebAppWithHighSecurity\WebAppWithHighSecurity\bin\Debug\net8.0\System.Text.Json.dll
 C:\Users\noahg\RiderProjects\WebAppWithHighSecurity\WebAppWithHighSecurity\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 C:\Users\noahg\RiderProjects\WebAppWithHighSecurity\WebAppWithHighSecurity\obj\Debug\net8.0\WebAppWithHighSecurity.sourcelink.json
+C:\Users\noahg\RiderProjects\WebAppWithHighSecurity\WebAppWithHighSecurity\bin\Debug\net8.0\WebAppWithHighSecurity.staticwebassets.endpoints.json
+C:\Users\noahg\RiderProjects\WebAppWithHighSecurity\WebAppWithHighSecurity\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\noahg\RiderProjects\WebAppWithHighSecurity\WebAppWithHighSecurity\obj\Debug\net8.0\staticwebassets\msbuild.WebAppWithHighSecurity.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\noahg\RiderProjects\WebAppWithHighSecurity\WebAppWithHighSecurity\bin\Debug\net8.0\BCrypt.Net-Next.dll

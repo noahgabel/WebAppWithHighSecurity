@@ -2,17 +2,20 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebAppWithHighSecurity.Data;
 
 #nullable disable
 
-namespace WebAppWithHighSecurity.Data.Migrations
+namespace WebAppWithHighSecurity.Migrations
 {
     [DbContext(typeof(CprTodoDbContext))]
-    partial class CprTodoDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250320152154_AddSalt")]
+    partial class AddSalt
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

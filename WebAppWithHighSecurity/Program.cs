@@ -1,3 +1,4 @@
+using System.Security.Cryptography.X509Certificates;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
@@ -8,6 +9,18 @@ using WebAppWithHighSecurity.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Detect if running inside Docker
+bool isDocker = Environment.GetEnvironmentVariable("DOTNET_RUNNING_IN_CONTAINER") == "true";
+
+// Select connection strings dynamically
+string connectionString = (isDocker
+    ? builder.Configuration.GetConnectionString("DockerConnection")
+    : builder.Configuration.GetConnectionString("DefaultConnection"))!;
+
+string todoConnectionString = (isDocker
+    ? builder.Configuration.GetConnectionString("DockerTodoConnection")
+    : builder.Configuration.GetConnectionString("TodoConnection"))!;
+
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
@@ -16,6 +29,8 @@ builder.Services.AddCascadingAuthenticationState();
 builder.Services.AddScoped<IdentityUserAccessor>();
 builder.Services.AddScoped<IdentityRedirectManager>();
 builder.Services.AddScoped<AuthenticationStateProvider, IdentityRevalidatingAuthenticationStateProvider>();
+builder.Services.AddScoped<IHashingService, HashingService>();
+
 
 builder.Services.AddAuthentication(options =>
     {
@@ -24,15 +39,12 @@ builder.Services.AddAuthentication(options =>
     })
     .AddIdentityCookies();
 
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ??
-                       throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+// Configure database connections
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 
-var cprTodoConnectionString = builder.Configuration.GetConnectionString("TodoConnection") ??
-                              throw new InvalidOperationException("Connection string 'TodoConnection' not found.");
 builder.Services.AddDbContext<CprTodoDbContext>(options =>
-    options.UseSqlServer(cprTodoConnectionString));
+    options.UseSqlServer(todoConnectionString));
 
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddIdentityCore<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
@@ -54,7 +66,36 @@ builder.Services.ConfigureApplicationCookie(options =>
         context.Response.Redirect("/CprNr");
         return Task.CompletedTask;
     };
+    options.Events.OnRedirectToReturnUrl = context =>
+    {
+        context.Response.Redirect("/CprNr");
+        return Task.CompletedTask;
+    };
 });
+
+// Set up HTTPS with certificate inside Docker
+var certPath = "/https/MyCert.pfx";
+var passwordPath = "/https/password.txt";
+
+if (isDocker)
+{
+    if (!File.Exists(passwordPath))
+    {
+        throw new FileNotFoundException($"Certifikat-password filen blev ikke fundet: {passwordPath}");
+    }
+
+    var certPassword = File.ReadAllText(passwordPath).Trim();
+    var cert = new X509Certificate2(certPath, certPassword);
+
+    builder.WebHost.ConfigureKestrel(options =>
+    {
+        options.ListenAnyIP(8081, listenOptions =>
+        {
+            listenOptions.UseHttps(cert);
+        });
+    });
+}
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -65,19 +106,16 @@ if (app.Environment.IsDevelopment())
 else
 {
     app.UseExceptionHandler("/Error", createScopeForErrors: true);
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
 app.UseHttpsRedirection();
-
 app.UseStaticFiles();
 app.UseAntiforgery();
 
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
 
-// Add additional endpoints required by the Identity /Account Razor components.
 app.MapAdditionalIdentityEndpoints();
 
 app.Run();

@@ -4,4 +4,5 @@ public class UserCprNumber
 {
     public string UserId { get; set; }
     public string CprNr { get; set; }
+    public byte[] Salt { get; set; }
 }

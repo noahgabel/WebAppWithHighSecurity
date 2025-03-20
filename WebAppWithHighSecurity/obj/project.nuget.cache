@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "WUdn06eghK4X9juskIv1ztOZXpaXMWhnn/XuIr421EGMhIkg6xu2/AuCM2cXQ2iv7Ig/e4h6KTMeKaLmenoREQ==",
+  "dgSpecHash": "AkQRZ5SviFY=",
   "success": true,
   "projectFilePath": "C:\\Users\\noahg\\RiderProjects\\WebAppWithHighSecurity\\WebAppWithHighSecurity\\WebAppWithHighSecurity.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\noahg\\.nuget\\packages\\anglesharp.diffing\\1.0.0\\anglesharp.diffing.1.0.0.nupkg.sha512",
     "C:\\Users\\noahg\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\noahg\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\noahg\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\noahg\\.nuget\\packages\\bunit.core\\1.38.5\\bunit.core.1.38.5.nupkg.sha512",
     "C:\\Users\\noahg\\.nuget\\packages\\bunit.web\\1.38.5\\bunit.web.1.38.5.nupkg.sha512",
     "C:\\Users\\noahg\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
