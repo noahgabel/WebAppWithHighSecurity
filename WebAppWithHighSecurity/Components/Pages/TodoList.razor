@@ -1,4 +1,5 @@
 ﻿@page "/TodoList"
+@using System.Text
 @using Microsoft.AspNetCore.Authorization
 @using Microsoft.AspNetCore.Identity
 @using Microsoft.EntityFrameworkCore
@@ -6,6 +7,8 @@
 @inject UserManager<ApplicationUser> UserManager
 @inject IServiceScopeFactory ServiceScopeFactory
 @inject AuthenticationStateProvider AuthenticationStateProvider
+@inject IAsymmetricEncryptionService AsymmetricEncryptionService
+@inject IHttpClientFactory HttpClientFactory
 @rendermode InteractiveServer
 @attribute [Authorize]
 
@@ -29,6 +32,29 @@
     private List<TodoItem> _todoItems = new();
     private string newTodoDescription = string.Empty;
 
+    private void TestLocalEncryptionDecryption()
+    {
+        try
+        {
+            var testText = "Hello RSA!";
+            var publicKey = AsymmetricEncryptionService.GetPublicKey();
+
+            // Encrypt locally
+            var encryptedBytes = AsymmetricEncryptionService.Encrypt(testText, publicKey);
+            var base64 = Convert.ToBase64String(encryptedBytes);
+            Console.WriteLine("🔐 Locally Encrypted (Base64): " + base64);
+
+            // Decrypt locally
+            var decryptedText = AsymmetricEncryptionService.Decrypt(encryptedBytes);
+            Console.WriteLine("✅ Locally Decrypted: " + decryptedText);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("❌ Local encryption/decryption test failed: " + ex.Message);
+        }
+    }
+
+
     protected override async Task OnInitializedAsync()
     {
         var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
@@ -45,9 +71,27 @@
 
                 using var scope = ServiceScopeFactory.CreateScope();
                 var dbContext = scope.ServiceProvider.GetRequiredService<CprTodoDbContext>();
-                _todoItems = await dbContext.TodoItems.Where(t => t.UserId == appUser.Id).ToListAsync();
+                var encryptedItems = await dbContext.TodoItems.Where(t => t.UserId == appUser.Id).ToListAsync();
+                foreach (var item in encryptedItems)
+                {
+                    try
+                    {
+                        var base64 = item.Description.Trim().Trim('"');
+                        Console.WriteLine($"Fixed base64: {base64}");
+                        var cipherBytes = Convert.FromBase64String(base64);
+                        item.Description = AsymmetricEncryptionService.Decrypt(cipherBytes);
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"Error decrypting item {item.Id}: {ex.Message}");
+                    }
+                }
+
+                _todoItems = encryptedItems;
             }
         }
+        
+        TestLocalEncryptionDecryption();
     }
 
     private async Task AddTodo()
@@ -60,21 +104,35 @@
             var appUser = await UserManager.GetUserAsync(user);
             if (appUser != null)
             {
+                var publicKey = AsymmetricEncryptionService.GetPublicKey();
+                var client = HttpClientFactory.CreateClient("ApiClient");
                 using var scope = ServiceScopeFactory.CreateScope();
                 var dbContext = scope.ServiceProvider.GetRequiredService<CprTodoDbContext>();
+
+                var response = await client.PostAsJsonAsync("AsymmetricEncryption/Encrypt", new
+                {
+                    PublicKey = publicKey,
+                    PlainText = newTodoDescription
+                });
+
+                string base64CipherText = await response.Content.ReadAsStringAsync(); // ✅ Proper Base64 string
 
                 var todoItem = new TodoItem
                 {
                     UserId = appUser.Id,
-                    Description = newTodoDescription
+                    Description = base64CipherText // ✅ Save directly to DB
                 };
 
                 dbContext.TodoItems.Add(todoItem);
                 await dbContext.SaveChangesAsync();
 
+                // Show the plaintext in UI immediately
+                todoItem.Description = newTodoDescription;
                 _todoItems.Add(todoItem);
                 newTodoDescription = string.Empty;
             }
         }
     }
+
+
 }

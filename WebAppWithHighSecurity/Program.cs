@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using WebAppWithHighSecurity.Components;
 using WebAppWithHighSecurity.Components.Account;
 using WebAppWithHighSecurity.Data;
+using System.Net.Http;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,7 +31,8 @@ builder.Services.AddScoped<IdentityUserAccessor>();
 builder.Services.AddScoped<IdentityRedirectManager>();
 builder.Services.AddScoped<AuthenticationStateProvider, IdentityRevalidatingAuthenticationStateProvider>();
 builder.Services.AddScoped<IHashingService, HashingService>();
-
+builder.Services.AddScoped<ISymmetricEncryptionService, SymmetricEncryptionService>();
+builder.Services.AddScoped<IAsymmetricEncryptionService, AsymmetricEncryptionService>();
 
 builder.Services.AddAuthentication(options =>
     {
@@ -38,6 +40,9 @@ builder.Services.AddAuthentication(options =>
         options.DefaultSignInScheme = IdentityConstants.ExternalScheme;
     })
     .AddIdentityCookies();
+
+// Register HttpClient with BaseAddress
+builder.Services.AddHttpClient("ApiClient", client => { client.BaseAddress = new Uri("https://localhost:7092"); });
 
 // Configure database connections
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
@@ -54,7 +59,8 @@ builder.Services.AddIdentityCore<ApplicationUser>(options => options.SignIn.Requ
     .AddRoleManager<RoleManager<IdentityRole>>()
     .AddDefaultTokenProviders();
 
-builder.Services.AddScoped<IUserStore<ApplicationUser>, UserStore<ApplicationUser, IdentityRole, ApplicationDbContext>>();
+builder.Services
+    .AddScoped<IUserStore<ApplicationUser>, UserStore<ApplicationUser, IdentityRole, ApplicationDbContext>>();
 builder.Services.AddScoped<IRoleStore<IdentityRole>, RoleStore<IdentityRole, ApplicationDbContext>>();
 
 builder.Services.AddSingleton<IEmailSender<ApplicationUser>, IdentityNoOpEmailSender>();
@@ -89,10 +95,7 @@ if (isDocker)
 
     builder.WebHost.ConfigureKestrel(options =>
     {
-        options.ListenAnyIP(8081, listenOptions =>
-        {
-            listenOptions.UseHttps(cert);
-        });
+        options.ListenAnyIP(8081, listenOptions => { listenOptions.UseHttps(cert); });
     });
 }
 

@@ -1,0 +1,31 @@
+﻿@page "/EncryptDecrypt"
+@using WebAppWithHighSecurity.Data
+@inject ISymmetricEncryptionService EncryptionService
+@rendermode InteractiveServer
+
+<h3>Symmetric Encryption Example</h3>
+
+<input @bind="plainText" placeholder="Enter text to encrypt"/>
+<button @onclick="EncryptText">Encrypt</button>
+<p>Encrypted Text: @encryptedText</p>
+
+<input @bind="cipherText" placeholder="Enter text to decrypt"/>
+<button @onclick="DecryptText">Decrypt</button>
+<p>Decrypted Text: @decryptedText</p>
+
+@code {
+    private string plainText = string.Empty;
+    private string encryptedText = string.Empty;
+    private string cipherText = string.Empty;
+    private string decryptedText = string.Empty;
+
+    private void EncryptText()
+    {
+        encryptedText = EncryptionService.Encrypt(plainText);
+    }
+
+    private void DecryptText()
+    {
+        decryptedText = EncryptionService.Decrypt(cipherText);
+    }
+}
