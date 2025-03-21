@@ -8,7 +8,6 @@ namespace WebAppWithHighSecurity.Data
         byte[] Encrypt(string plainText, string publicKey);
         string Decrypt(byte[] cipherBytes);
         string GetPublicKey();
-        string GetPublicKeyFingerprint();
     }
 
     public class AsymmetricEncryptionService : IAsymmetricEncryptionService
@@ -16,36 +15,30 @@ namespace WebAppWithHighSecurity.Data
         private readonly RSA _privateKey;
         private readonly RSA _publicKey;
 
-        // Store keys in a shared, fixed location
-        private static readonly string KeyDirectory = @"C:\Users\noahg\.aspnet\keys";
-        private static readonly string PrivateKeyPath = Path.Combine(KeyDirectory, "privateKey.xml");
-        private static readonly string PublicKeyPath = Path.Combine(KeyDirectory, "publicKey.xml");
-
         public AsymmetricEncryptionService()
         {
-            Directory.CreateDirectory(KeyDirectory); // Ensure directory exists
+            _privateKey = RSA.Create(2048); // Ensure key size is 2048 bits
+            _publicKey = RSA.Create(2048);  // Ensure key size is 2048 bits
 
-            _privateKey = RSA.Create(2048);
-            _publicKey = RSA.Create(2048);
-
-            if (File.Exists(PrivateKeyPath) && File.Exists(PublicKeyPath))
+            if (File.Exists("privateKey.xml") && File.Exists("publicKey.xml"))
             {
-                _privateKey.FromXmlString(File.ReadAllText(PrivateKeyPath));
-                _publicKey.FromXmlString(File.ReadAllText(PublicKeyPath));
+                _privateKey.FromXmlString(File.ReadAllText("privateKey.xml"));
+                _publicKey.FromXmlString(File.ReadAllText("publicKey.xml"));
             }
             else
             {
-                File.WriteAllText(PrivateKeyPath, _privateKey.ToXmlString(true));
-                File.WriteAllText(PublicKeyPath, _publicKey.ToXmlString(false));
+                File.WriteAllText("privateKey.xml", _privateKey.ToXmlString(true));
+                File.WriteAllText("publicKey.xml", _publicKey.ToXmlString(false));
             }
-
         }
 
         public byte[] Encrypt(string plainText, string publicKey)
         {
-            using var rsa = RSA.Create();
-            rsa.FromXmlString(publicKey);
-            return rsa.Encrypt(Encoding.UTF8.GetBytes(plainText), RSAEncryptionPadding.OaepSHA256);
+            using (var rsa = RSA.Create())
+            {
+                rsa.FromXmlString(publicKey);
+                return rsa.Encrypt(Encoding.UTF8.GetBytes(plainText), RSAEncryptionPadding.OaepSHA256);
+            }
         }
 
         public string Decrypt(byte[] cipherBytes)
@@ -66,14 +59,5 @@ namespace WebAppWithHighSecurity.Data
         {
             return _publicKey.ToXmlString(false);
         }
-
-        public string GetPublicKeyFingerprint()
-        {
-            using var sha256 = SHA256.Create();
-            var keyBytes = Encoding.UTF8.GetBytes(GetPublicKey());
-            var hash = sha256.ComputeHash(keyBytes);
-            return BitConverter.ToString(hash).Replace("-", "").ToLower();
-        }
-
     }
 }
